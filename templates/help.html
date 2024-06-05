@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Saved notes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='impstyle.css') }}" >
+    <script src="{{ url_for('static',filename='script.js') }}" ></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+        <div class="top_navbar">
+        <div class="hamburger">
+            <h2>Sign Language Detection</h2>
+        </div>
+        </div>
+     <div class="container">
+         <center>
+            <img src="{{ url_for('static',filename='images/help.jpg') }}" alt="American Sign Language">
+         </center>
+         <p>For more detailed guide refer : <a href="https://www.youtube.com/watch?v=a5BD8SjhPSg">Click Here to watch on Youtube</a></p>
+     </div>
+     </div>
+         <div class="sidebar">
+             <div class="profile">
+                <img src="{{ url_for('static',filename='images/ANUJ.png') }}" alt="Profile_picture">
+                <h3>Hello {{fname}}</h3>
+             </div>
+             <ul>
+                 <li>
+                     <a href="/neweditor" >
+                         <span class="icon"><span class="material-symbols-outlined">edit_square</span></span>
+                         <span class="item">New Editor</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/saved_notes">
+                         <span class="icon"><span class="material-symbols-outlined">inventory</span></i></span>
+                         <span class="item">Saved Notes</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="/help" class="active">
+                         <span class="icon"><span class="material-symbols-outlined">help</span></span>
+                         <span class="item">Help</span>
+                     </a>
+                 </li>
+                 <li>
+                     <a href="{{url_for('logout')}}">
+                         <span class="icon"><span class="material-symbols-outlined">logout</span></span>
+                         <span class="item">Log-Out</span>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+         
+     </div>
+</body>
+</html>

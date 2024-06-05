@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="C:\Users\Atharva\Documents\handSignDtection\static\login.css" />
+        <script src="C:\Users\Atharva\Documents\handSignDtection\static\login.js"></script>
+    </head>
+    <body>
+        <h2>Modal Login Form</h2>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+                
+            <button type="submit">Login</button>
+            <label>
+                <a href="javascript:void(0);" onClick="login_otp()" class="psw">Login With OTP</a>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <span>Dont have account, <a href="javascript:void(0);" onClick="signup()">Sign up now</a></span>
+            </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="javascript:void(0);" onClick="forgot_password()">password?</a></span>
+            </div>
+        </form>
+        </div>
+
+        <div id="id02" class="modal">
+        
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+    
+                <div class="container">
+                <label for="uname"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                    
+                <button type="submit">Send OTP</button>
+                <label>
+                    <a href="javascript:void(0);" onClick="login_password()" class="psw">Login With Password</a>
+                    &nbsp; &nbsp; &nbsp;
+                    <span>Dont have account, <a href="javascript:void(0);" onClick="signup()">Sign up now</a></span>
+                </label>
+                </div>
+    
+                <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="id03" class="modal">
+    
+           <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Forgot Password</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                    <button type="submit">Send OTP</button>
+                    <label>
+                        <a href="javascript:void(0);" onClick="login_otp()" class="psw">Login With OTP</a>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="javascript:void(0);" onClick="login_password()" class="psw">Login With Password</a>
+                    </label>
+                    <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="id04" class="modal">
+    
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                 <div class="imgcontainer">
+                 <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                 </div>
+     
+                 <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+        
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    
+                    <label for="cpsw"><b> Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="con_password" required>
+                        
+                    <button type="submit">Sign up</button>
+                    <label>
+                        <a href="javascript:void(0);" onClick="login_otp()" class="psw">Login With OTP</a>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="javascript:void(0);" onClick="login_password()" class="psw">Login With Password</a>
+                    </label>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                    </div>
+             </form>
+         </div>
+
+        <div id="id05" class="modal">
+    
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                 <div class="imgcontainer">
+                 <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+                 </div>
+     
+                 <div class="container">
+                 <label for="uname"><b>OTP has been sent to your email</b></label>
+                 <input type="text" placeholder="Enter OTP" name="otp" required>
+                     
+                 <button type="submit">Verify</button>
+                 <label>
+ 
+                 </label>
+                 </div>
+                     <div class="container" style="background-color:#f1f1f1">
+                     <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+                 </div>
+             </form>
+         </div>
+
+    </body>
+</html>

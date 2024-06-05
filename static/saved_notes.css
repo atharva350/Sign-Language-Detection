@@ -1,0 +1,6 @@
+form{
+    display:inline;
+}
+form button:hover{
+    cursor: pointer;
+}
