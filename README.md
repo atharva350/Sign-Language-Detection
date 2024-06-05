@@ -12,17 +12,17 @@ Welcome to the Sign Language Detection project! This repository contains the sou
 -> **Camera Integration:** Users can start their camera to type text using hand gestures.<br />
 -> **Notes Management:** Users can save typed text as notes, and edit or delete them from the dashboard.<br />
 -> **Text-to-Speech:** Converts typed text into speech.<br />
--> **Responsive Design:** Ensures compatibility with various devices.<br />
+-> **Responsive Design:** Ensures compatibility with various devices.
 
 # Technologies Used
 **Frontend:** HTML, CSS, JavaScript<br />
-**Backend:** Flask framework using Python
-**Database:** MySQL
+**Backend:** Flask framework using Python<br />
+**Database:** MySQL<br />
 **Machine Learning:** Python (with relevant libraries for computer vision and machine learning)
 
 # Usage
--> **Sign Up / Log In:** Create a new account or log in with existing credentials.
-->**Start Camera:** Navigate to the camera page and start your camera to begin detecting hand gestures.
-->**Type with Gestures:** Use hand gestures to type text on the screen.
-->**Manage Notes:** Save typed text as notes, and edit or delete them from the dashboard.
+-> **Sign Up / Log In:** Create a new account or log in with existing credentials.<br />
+->**Start Camera:** Navigate to the camera page and start your camera to begin detecting hand gestures.<br />
+->**Type with Gestures:** Use hand gestures to type text on the screen.<br />
+->**Manage Notes:** Save typed text as notes, and edit or delete them from the dashboard.<br />
 ->**Text-to-Speech:** Convert typed text into speech using the text-to-speech feature.
