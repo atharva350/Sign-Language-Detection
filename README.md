@@ -26,3 +26,9 @@ Welcome to the Sign Language Detection project! This repository contains the sou
 ->**Type with Gestures:** Use hand gestures to type text on the screen.<br />
 ->**Manage Notes:** Save typed text as notes, and edit or delete them from the dashboard.<br />
 ->**Text-to-Speech:** Convert typed text into speech using the text-to-speech feature.
+
+# ScreenShots
+![image](https://github.com/atharva350/Sign-Language-Detection/assets/147875370/27ca1245-14fc-4adf-96d2-3babbf8400a1)
+![image](https://github.com/atharva350/Sign-Language-Detection/assets/147875370/c75b214b-995b-40bc-b0cb-ab52ac621cf3)
+
+
